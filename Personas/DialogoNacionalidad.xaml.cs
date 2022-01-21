@@ -1,5 +1,4 @@
-﻿using Microsoft.Toolkit.Mvvm.Input;
-using System.Windows;
+﻿using System.Windows;
 
 namespace Personas
 {

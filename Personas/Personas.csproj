@@ -103,25 +103,25 @@
     <Compile Include="ConsultaPersona.xaml.cs">
       <DependentUpon>ConsultaPersona.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ConsultaPersonaVM.cs" />
+    <Compile Include="VM\ConsultaPersonaVM.cs" />
     <Compile Include="DialogoNacionalidad.xaml.cs">
       <DependentUpon>DialogoNacionalidad.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DialogoNacionalidadVM.cs" />
+    <Compile Include="VM\DialogoNacionalidadVM.cs" />
     <Compile Include="ListPersons.xaml.cs">
       <DependentUpon>ListPersons.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ListPersonsVM.cs" />
+    <Compile Include="VM\ListPersonsVM.cs" />
     <Compile Include="Message\NewNacionalidadMessage.cs" />
     <Compile Include="Message\SelectedPersonMessage.cs" />
     <Compile Include="NewPerson.xaml.cs">
       <DependentUpon>NewPerson.xaml</DependentUpon>
     </Compile>
     <Compile Include="Message\NewPersonMessage.cs" />
-    <Compile Include="NewPersonVM.cs" />
-    <Compile Include="Persona.cs" />
-    <Compile Include="ServicioDatos.cs" />
-    <Compile Include="ServicioNavegacion.cs" />
+    <Compile Include="VM\NewPersonVM.cs" />
+    <Compile Include="POJO\Persona.cs" />
+    <Compile Include="Servicios\ServicioDatos.cs" />
+    <Compile Include="Servicios\ServicioNavegacion.cs" />
     <Page Include="ConsultaPersona.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -152,7 +152,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainWindowVM.cs" />
+    <Compile Include="VM\MainWindowVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

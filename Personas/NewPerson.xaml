@@ -12,17 +12,18 @@
         <syncfusion:SfTextInputLayout Hint="Nombre" Margin="0,30,0,0" 
                                        HelperText="Nombre de la persona"
                                        LeadingViewPosition="Outside">
-            <TextBox Text="{Binding Path=PersonaFormulario.Nombre}"></TextBox>
+            <TextBox Text="{Binding Path=PersonaFormulario.Nombre}"/>
 
             <syncfusion:SfTextInputLayout.LeadingView>
-                <Label FontFamily="/img/person"/>
+                <Image Source="img/person.png"/>
             </syncfusion:SfTextInputLayout.LeadingView>
-
-
         </syncfusion:SfTextInputLayout>
 
         <syncfusion:SfTextInputLayout Hint="Edad" Margin="0,30,0,0" HelperText="Edad de la persona">
-            <TextBox Text="{Binding Path=PersonaFormulario.Edad, Mode=OneWayToSource}"></TextBox>
+            <TextBox Text="{Binding Path=PersonaFormulario.Edad, Mode=OneWayToSource}"/>
+            <syncfusion:SfTextInputLayout.LeadingView>
+                <Image Source="img/cake.png"/>
+            </syncfusion:SfTextInputLayout.LeadingView>
         </syncfusion:SfTextInputLayout>
 
         <StackPanel Orientation="Horizontal">
@@ -30,6 +31,9 @@
                 <syncfusion:ComboBoxAdv Width="150" HorizontalAlignment="Left"
                                         ItemsSource="{Binding Path=ListaNacionalidades}" 
                                         SelectedValue="{Binding Path=PersonaFormulario.Nacionalidad}"/>
+                <syncfusion:SfTextInputLayout.LeadingView>
+                    <Image Source="img/world.png"/>
+                </syncfusion:SfTextInputLayout.LeadingView>
             </syncfusion:SfTextInputLayout>
             <Button Width="30" Height="30" Margin="10,15,0,0" Command="{Binding Path=AbrirDialogo}">+</Button>
         </StackPanel>
