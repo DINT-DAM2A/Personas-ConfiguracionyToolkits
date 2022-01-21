@@ -18,14 +18,16 @@
             <Button Height="20" Width="150" Margin="5,0,0,0" Command="{Binding Path=ConsultaPersonaCommand}">Consulta persona</Button>
         </StackPanel>
 
+        <!-- Bloque inferior que muestra la Version -->
         <StackPanel DockPanel.Dock="Bottom" Margin="0,5,0,0" Orientation="Horizontal">
             <TextBlock Margin="0,0,5,0" Text="Version:"></TextBlock>
             <TextBlock Text="{Binding Source={x:Static version:Settings.Default}, Path=Version}"></TextBlock>
         </StackPanel>
 
-        <!-- Bloque inferior con el Contenedor -->
+        <!-- Bloque intermedio que rellena el hueco restante con el Contenedor de UserControl-->
         <Border BorderBrush="Black" BorderThickness="2">
             <ContentControl Content="{Binding Path=VentanaVisible}"></ContentControl>
         </Border>
     </DockPanel>
+
 </Window>
